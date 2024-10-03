@@ -52,7 +52,7 @@ def bike_user_distribution(df):
     total_counts = user_counts.groupby('user_type')['cnt'].sum()
     return total_counts
 
-main_df = pd.read_csv("./main_data_hour.csv")
+main_df = pd.read_csv("main_data_hour.csv")
 
 with st.sidebar:
     # Menambahkan logo perusahaan
